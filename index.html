@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Invitación de Boda</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Outfit:wght@300;400;600&family=Prata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lavishly+Yours&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lavishly+Yours&family=Passions+Conflict&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="wrapper" id="wrapper">
+    <div class="panel left"></div>
+    <div class="panel right"></div>
+    <img src="media/sello.png" alt="Sello de cera" class="seal" id="sello">
+  </div>
+
+  <div class="content" id="invitacion">
+
+    <!-- Portada -->
+    <section class="slide">
+      <h1>Paola y Nelson</h1>
+    </section>
+
+    <!-- Nos Casamos -->
+    <section class="slide decorada">
+      <div class="bloque-texto casamos">
+        <img src="media/star.png" alt="Decoración" class="decoracion-esquina">
+        <h2>¡Nos casamos!</h2>
+        <p>Queremos celebrar nuestro amor a lado de los que más queremos y por eso, tenemos el enorme placer de invitarte...</p>
+        <img src="media/star2.png" alt="Decoración inferior" class="decoracion-inferior">
+      </div>
+    </section>
+
+    <!-- El Gran Día -->
+    <section class="slide dia" id="el-gran-dia">
+      <div class="bloque-texto dia">
+        <h2>¡El gran día!</h2>
+        <img src="media/ring.png" alt="Decoración anillos" class="decoracion-central">
+        <p>13 - diciembre - 2025</p>
+      </div>
+    </section>
+
+    <!-- Ceremonia Religiosa -->
+    <section class="slide slide-ceremonia">
+      <div class="bloque-ceremonia">
+        <img src="media/church.png" alt="Decoración ceremonia" class="imagen-ceremonia">
+        <div class="texto-ceremonia">
+          <div class="ceremonia-header">
+            <h2>Ceremonia religiosa</h2>
+          </div>
+          <div class="ceremonia-medio">
+            <p>
+              <strong>
+                <a href="https://www.google.com/maps/place/Catedral+de+Cuernavaca/" target="_blank">
+                  Catedral de Cuernavaca
+                </a>
+              </strong><br>
+              Capilla de la tercera orden de San Francisco de Asís<br>
+              <strong>11:00 AM</strong>
+            </p>
+          </div>
+          <div class="ceremonia-footer">
+            <p>Para nosotros es muy importante el sacramento, te agradecemos que llegues unos minutos antes para poder disfrutar juntos la Santa Misa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recepción -->
+    <section class="slide slide-recepcion">
+      <div class="bloque-recepcion">
+        <div class="texto-recepcion">
+          <div class="recepcion-header">
+            <h2>Recepción</h2>
+          </div>
+          <div class="recepcion-medio">
+            <p>
+              <strong>
+                <a href="https://www.google.com/maps/place/Rancho+Los+Potrillos/" target="_blank">
+                  Rancho “Los Potrillos”
+                </a>
+              </strong><br>
+              <strong>2:00 PM</strong>
+            </p>
+          </div>
+          <div class="recepcion-footer">
+            <p>Nos gustan tanto los niños que no queremos que se desvelen, se aburran y pasen frío en este evento nupcial...<br>
+              <strong>¡Evento sólo para adultos!</strong>
+            </p>
+          </div>
+        </div>
+        <img src="media/jorse.png" alt="Decoración recepción" class="imagen-recepcion">
+      </div>
+    </section>
+
+    <!-- Código de vestimenta -->
+    <section class="slide slide-codigo">
+      <div class="bloque-codigo">
+        <div class="vestimenta-header">
+          <h2>Código de vestimenta</h2>
+        </div>
+        <div class="vestimenta-cuadro">
+          <p>Cóctel / Formal</p>
+        </div>
+        <div class="vestimenta-explicacion">
+          <p>Será una boda muy colorida... ¡Sé creativo con tu outfit!</p>
+        </div>
+        <div class="vestimenta-footer">
+          <img src="media/colors.png" alt="Decoración colores" class="imagen-recepcion">
+          <p>Reservamos estos colores para la novia y sus damas. ¡Gracias!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mesa de regalos -->
+    <section class="slide slide-regalos">
+      <div class="bloque-regalos">
+        <h2>Obsequios</h2>
+        <img src="media/gift.png" alt="Decoración regalos" class="imagen-regalos">
+        <p>Tu presencia es el mejor regalo, pero si deseas obsequiarnos algo, puedes hacerlo de la siguiente manera:</p>
+        <div class="botones-regalos">
+          <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51644274" target="_blank" class="boton-regalos">
+            Liverpool
+          </a>
+          <a href="https://www.amazon.com.mx/wedding/registry/2TIX8CRNKUCZ3" target="_blank" class="boton-regalos">
+            Amazon
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmación -->
+    <section class="slide slide-confirmación">
+      <div class="bloque-confirmacion">
+        <h2>Confirma tu asistencia</h2>
+        <p>Por favor confírmanos tu asistencia</p>
+        <button class="boton-confirmar" onclick="abrirFormulario()">Confirmar asistencia</button>
+      </div>
+
+      <div class="modal" id="modalConfirmacion">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarFormulario()">&times;</span>
+          <h4>Confirma tu asistencia</h4>
+          <form id="formConfirmacion" onsubmit="enviarConfirmacion(event)">
+            <input type="text" id="nombreInvitado" placeholder="Nombre" required>
+            <label for="conAcompanante">¿Vas con alguien?</label>
+            <select id="conAcompanante" onchange="mostrarCampoAcompanante()">
+              <option value="no">No</option>
+              <option value="si">Sí</option>
+            </select>
+            <input type="text" id="nombreAcompanante" placeholder="Nombre del acompañante" style="display: none;">
+            <button type="submit" class="boton-enviar">Confirmar</button>
+          </form>
+          <p id="mensajeGracias" style="display: none;"></p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <audio id="musicaFondo" preload="auto" loop>
+    <source src="media/song.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
