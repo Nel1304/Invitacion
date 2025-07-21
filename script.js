@@ -49,49 +49,11 @@ function enviarConfirmacion(e) {
   }, 4000);
 }
 
-// Código para abrir invitación al hacer click en el sello de cera
-const sello = document.getElementById('sello');
-const wrapper = document.getElementById('wrapper');
-
-sello.addEventListener('click', () => {
-  wrapper.classList.add('open');
-
-  setTimeout(() => {
-    const content = document.getElementById('invitacion');
-    content.classList.add('fullscreen');
+/.add('fullscreen');
     activarTransiciones();
 
     musica.play().catch(error => {
       console.warn("Reproducción automática bloqueada:", error);
     });
   }, 2000);
-});
-
-const musica = document.getElementById('musicaFondo');
-
-function pausarMusica() {
-  if (!musica.paused) musica.pause();
-}
-
-function reanudarMusica() {
-  musica.play().catch(() => {});
-}
-
-// Detectar cuando se pierde el foco o visibilidad
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    pausarMusica();
-  } else {
-    reanudarMusica();
-  }
-});
-
-// Detectar cuando la página pierde el foco (menos confiable, pero ayuda en móviles)
-window.addEventListener('blur', () => {
-  pausarMusica();
-});
-
-// Detectar cuando regresa el foco
-window.addEventListener('focus', () => {
-  reanudarMusica();
 });
