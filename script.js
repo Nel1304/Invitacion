@@ -46,14 +46,24 @@ function enviarConfirmacion(e) {
     document.getElementById('el-gran-dia').scrollIntoView({
       behavior: 'smooth'
     });
-  }, 4000);
+  }, 5000);
 }
 
-content.classList.add('fullscreen');
+// Código para abrir invitación al hacer click en el sello de cera
+const sello = document.getElementById('sello');
+const wrapper = document.getElementById('wrapper');
+
+sello.addEventListener('click', () => {
+  wrapper.classList.add('open');
+
+  setTimeout(() => {
+    const content = document.getElementById('invitacion');
+    content.classList.add('fullscreen');
     activarTransiciones();
 
     musica.play().catch(error => {
       console.warn("Reproducción automática bloqueada:", error);
     });
-  }, 2000);
+  }, 1200);
 });
+
