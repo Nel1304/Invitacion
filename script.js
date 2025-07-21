@@ -67,11 +67,31 @@ sello.addEventListener('click', () => {
   }, 2000);
 });
 
+const musica = document.getElementById('musicaFondo');
+
+function pausarMusica() {
+  if (!musica.paused) musica.pause();
+}
+
+function reanudarMusica() {
+  musica.play().catch(() => {});
+}
+
+// Detectar cuando se pierde el foco o visibilidad
 document.addEventListener('visibilitychange', () => {
-  const musica = document.getElementById('musicaFondo');
   if (document.hidden) {
-    musica.pause();
+    pausarMusica();
   } else {
-    musica.play().catch(() => {});
+    reanudarMusica();
   }
+});
+
+// Detectar cuando la página pierde el foco (menos confiable, pero ayuda en móviles)
+window.addEventListener('blur', () => {
+  pausarMusica();
+});
+
+// Detectar cuando regresa el foco
+window.addEventListener('focus', () => {
+  reanudarMusica();
 });
