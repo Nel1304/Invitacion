@@ -46,7 +46,7 @@ function enviarConfirmacion(e) {
     document.getElementById('el-gran-dia').scrollIntoView({
       behavior: 'smooth'
     });
-  }, 2000);
+  }, 4000);
 }
 
 // Código para abrir invitación al hacer click en el sello de cera
