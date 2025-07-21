@@ -767,5 +767,17 @@ a:hover {
   font-size: 2.1rem;
 }
 
+.bloque-confirmacion h2{
+  font-size: 3.1rem;
+}
+
+.bloque-confirmacion p{
+  font-size: 2.1rem;
+}
+
+.modal-contenido p{
+  font-size: 3rem;
+}
+
 }
 
