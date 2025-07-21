@@ -49,7 +49,7 @@ function enviarConfirmacion(e) {
   }, 4000);
 }
 
-/.add('fullscreen');
+content.classList.add('fullscreen');
     activarTransiciones();
 
     musica.play().catch(error => {
