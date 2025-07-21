@@ -64,5 +64,14 @@ sello.addEventListener('click', () => {
     musica.play().catch(error => {
       console.warn("Reproducción automática bloqueada:", error);
     });
-  }, 1200);
+  }, 2000);
+});
+
+document.addEventListener('visibilitychange', () => {
+  const musica = document.getElementById('musicaFondo');
+  if (document.hidden) {
+    musica.pause();
+  } else {
+    musica.play().catch(() => {});
+  }
 });
