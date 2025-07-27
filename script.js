@@ -60,13 +60,13 @@ sello.addEventListener('click', () => {
     const content = document.getElementById('invitacion');
     content.classList.add('fullscreen');
 
-    wrapper.style.display 'none';
+    //wrapper.style.display 'none';
     
     activarTransiciones();
 
     musica.play().catch(error => {
       console.warn("Reproducción automática bloqueada:", error);
     });
-  }, 1200);
+  }, 2000);
 });
 
