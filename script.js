@@ -59,6 +59,9 @@ sello.addEventListener('click', () => {
   setTimeout(() => {
     const content = document.getElementById('invitacion');
     content.classList.add('fullscreen');
+
+    wrapper.style.display 'none';
+    
     activarTransiciones();
 
     musica.play().catch(error => {
