@@ -60,7 +60,7 @@ sello.addEventListener('click', () => {
     const content = document.getElementById('invitacion');
     content.classList.add('fullscreen');
 
-    wrapper.style.display='none';
+    wrapper.style.display = 'none';
     
     activarTransiciones();
 
